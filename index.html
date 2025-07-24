@@ -4,8 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+      <!-- Tailwind CSS Cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="tailwind.init.css">
 </head>
-<body>
+<body  class="scroll-smooth">
+    <!-- Navigation Bar -->
+     
+    <header class="lg:w-[1140px] m-auto mt-7">
+        <nav class="flex justify-between items-center px-4 ">
+            <div class="logo w-16 md:w-32">
+                <a href="index.html"><img src="assets/logo.png" alt="Logo"></a>
+            </div>
+            <div class="nav-items flex gap-12 font-medium">
+                <ul class="lg:flex gap-12 hidden">
+                    <li><a class="hover:text-[#E95A08]" href="#home">Home</a></li>
+                    <li><a class="opacity-50 hover:text-[#E95A08] hover:opacity-100" href="#shop">Shop</a></li>
+                    <li><a class="opacity-50 hover:text-[#E95A08] hover:opacity-100" href="#about">About Us</a></li>
+                </ul>
+                <div class="cart flex gap-2.5">
+                    <img class=" cursor-pointer" src="assets/shopping-cart.png" alt="Cart-icon">
+                    <p class="hover:text-[#E95A08] cursor-pointer">Cart ($56)</p>
+                </div>
+            </div>
+        </nav>
+
+     
     
     <header>
 
@@ -14,7 +39,7 @@
 
     </main>
     <footer>
-        
+
     </footer>
     
 </body>
